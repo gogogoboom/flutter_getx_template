@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_template/comm/global/i_style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 ///颜色
 class PandaColors {
@@ -143,10 +144,10 @@ class PandaConstant {
           color: Color(0xFF333333),
           fontWeight: FontWeight.bold),
       headline4: TextStyle(fontSize: bigTextSize, color: Color(0xFF333333)),
-      headline5: TextStyle(
+      headline5: GoogleFonts.lato(textStyle: TextStyle(
           fontSize: ScreenUtil().setSp(normalTextSize),
           color: Color(0xFF333333),
-          fontWeight: FontWeight.bold),
+          fontWeight: FontWeight.bold)),
       headline6: TextStyle(fontSize: ScreenUtil().setSp(normalTextSize), color: Color(0xFF333333)),
       subtitle1: TextStyle(fontSize: ScreenUtil().setSp(middleTextSize), color: Color(0xFF333333)),
       subtitle2: TextStyle(fontSize: ScreenUtil().setSp(middleTextSize), color: Color(0xFF666666)),
@@ -159,10 +160,10 @@ class PandaConstant {
           color: Colors.white,
           fontWeight: FontWeight.bold),
       headline4: TextStyle(fontSize: ScreenUtil().setSp(bigTextSize), color: Colors.white),
-      headline5: TextStyle(
+      headline5: GoogleFonts.lato(textStyle: TextStyle(
           fontSize: ScreenUtil().setSp(normalTextSize),
           color: Colors.white,
-          fontWeight: FontWeight.bold),
+          fontWeight: FontWeight.bold)),
       headline6: TextStyle(fontSize: ScreenUtil().setSp(normalTextSize), color: Colors.white),
       subtitle1: TextStyle(fontSize: ScreenUtil().setSp(middleTextSize), color: Colors.white),
       subtitle2: TextStyle(fontSize: ScreenUtil().setSp(middleTextSize), color: Colors.white),

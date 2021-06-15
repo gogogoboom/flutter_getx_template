@@ -1,5 +1,7 @@
 import 'package:flutter_getx_template/comm/model/case_model.dart';
+import 'package:flutter_getx_template/comm/model/route_model.dart';
 import 'package:flutter_getx_template/comm/repository/i_home_repository.dart';
+import 'package:flutter_getx_template/comm/route/page_routes.dart';
 import 'package:get/get.dart';
 import 'package:wechat_camera_picker/wechat_camera_picker.dart';
 
@@ -7,6 +9,10 @@ class IndexLogic extends SuperController<CasesModel> {
   final IHomeRepository homeRepository;
 
   IndexLogic({required this.homeRepository});
+
+  final routes = [
+    RouteModel(PageRoutes.getxCache, () => Get.toNamed(PageRoutes.getxCache))
+  ];
 
   @override
   void onInit() {
@@ -34,7 +40,7 @@ class IndexLogic extends SuperController<CasesModel> {
     // TODO: implement onResumed
   }
 
-  openCamera() async {
-    final AssetEntity? entity = await CameraPicker.pickFromCamera(Get.context!);
+  void openCamera() async {
+    final entity = await CameraPicker.pickFromCamera(Get.context!);
   }
 }

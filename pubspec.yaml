@@ -44,6 +44,7 @@ dependencies:
   bot_toast: ^4.0.1
 #  wechat_assets_picker: ^5.5.2
   wechat_camera_picker: ^2.2.0
+  google_fonts: ^2.1.0
 
   firebase_core: ^1.1.0
   firebase_crashlytics: ^2.0.2

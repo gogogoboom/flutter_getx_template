@@ -9,7 +9,7 @@ final ThemeData themeWhite = ThemeData.light().copyWith(
     brightness: Brightness.light,
     scaffoldBackgroundColor: PandaColors.themePrimaryColor[_themeIndex],
     primaryColor: PandaColors.themePrimaryColor[_themeIndex],
-    highlightColor: PandaColors.themeSecondColor[_themeIndex],
+    highlightColor: PandaColors.themeHoverColor[_themeIndex],
     accentColor: PandaColors.themeAccentColor[_themeIndex],
     secondaryHeaderColor: PandaColors.themeSecondaryHeaderColor[_themeIndex],
     backgroundColor: PandaColors.themeBackgroundColor[_themeIndex],

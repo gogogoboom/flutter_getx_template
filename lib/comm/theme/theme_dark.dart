@@ -8,7 +8,7 @@ final _themeIndex = 1;
 final ThemeData themeDark = ThemeData.dark().copyWith(
   brightness: Brightness.dark,
   scaffoldBackgroundColor: PandaColors.themePrimaryColor[_themeIndex],
-  highlightColor: PandaColors.themeSecondColor[_themeIndex],
+  highlightColor: PandaColors.themeHoverColor[_themeIndex],
   primaryColor: PandaColors.themePrimaryColor[_themeIndex],
   accentColor: PandaColors.themeAccentColor[_themeIndex],
   secondaryHeaderColor: PandaColors.themeSecondaryHeaderColor[_themeIndex],
